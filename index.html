@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dawn • Noon • Dusk — Compact Nutrition Map</title>
+<style>
+  :root{
+    --dawn:#FFF3BF; /* soft yellow */
+    --noon:#D6E4FF; /* soft blue */
+    --dusk:#E6FFFA; /* soft green */
+    --card-bg:#ffffff;
+    --muted:#6b6b6b;
+    --accent:#1f6feb;
+    --maxwidth:980px;
+    font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  }
+  html,body{height:100%;margin:0;background:#f6f8fb;color:#111}
+  .wrap{max-width:var(--maxwidth);margin:28px auto;padding:18px}
+  h1{font-size:18px;margin:0 0 10px}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:16px}
+  .slot{border-radius:10px;background:var(--card-bg);box-shadow:0 6px 18px rgba(18,38,63,0.06);padding:12px}
+  .slot.dawn{background:linear-gradient(180deg,var(--dawn),#fff)}
+  .slot.noon{background:linear-gradient(180deg,var(--noon),#fff)}
+  .slot.dusk{background:linear-gradient(180deg,var(--dusk),#fff)}
+  .label{font-weight:700;margin-bottom:6px}
+  ul{margin:6px 0 10px 18px;padding:0}
+  li{margin:6px 0}
+  .minor{font-size:14px}
+  .major{font-size:15px;font-weight:600}
+  .notes{font-size:12px;color:var(--muted);margin-top:6px}
+  .nut-table{width:100%;border-collapse:collapse;margin-top:10px}
+  .nut-table th{background:#f0f4ff;color:#333;padding:8px;text-align:left;font-size:13px}
+  .nut-table td{padding:8px;border-bottom:1px dashed #e7eefc;font-size:13px}
+  .small{font-size:12px;color:var(--muted)}
+  .footer{font-size:12px;color:var(--muted);margin-top:12px}
+  @media (max-width:900px){.grid{grid-template-columns:1fr}.wrap{padding:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Dawn — Noon — Dusk • Compact Nutrition Map</h1>
+  <div class="grid">
+    <div class="slot dawn">
+      <div class="label">Dawn — Drink (minor)</div>
+      <ul class="minor">
+        <li>water + pinch of salt or lemon</li>
+        <li>jaggery water</li>
+        <li>black coffee / tea (no sugar)</li>
+        <li>curd drink (lassi)</li>
+        <li>sattu water</li>
+      </ul>
+      <div class="label">Dawn — Meal (major)</div>
+      <ul class="major">
+        <li>4 slices bread + 2 tbsp peanut butter</li>
+        <li>banana + milk or curd</li>
+        <li>poha with peanuts</li>
+        <li>oats with banana</li>
+        <li>roti + curd</li>
+      </ul>
+      <div class="notes">Tip: choose one minor + one major. Minor stabilises electrolytes; major supplies bulk calories/fat.</div>
+    </div><div class="slot noon">
+  <div class="label">Noon — Snack (minor)</div>
+  <ul class="minor">
+    <li>cucumber or tomato slices + salt/lemon</li>
+    <li>buttermilk</li>
+    <li>small fruit (banana, guava, papaya)</li>
+    <li>roasted chana or handful peanuts</li>
+  </ul>
+  <div class="label">Noon — Meal (major)</div>
+  <ul class="major">
+    <li>500 g cooked rice + soya or chicken (~150 g raw equiv.)</li>
+    <li>rice + dal + potato + leafy veg</li>
+    <li>khichdi with ghee</li>
+    <li>2 chapati + sabzi + curd</li>
+    <li>rice + small mutton/fish + peas</li>
+  </ul>
+  <div class="notes">Tip: if no kitchen, buy cooked rice+veg or cheap protein plate; add cucumber or fruit for micronutrients.</div>
+</div>
+
+<div class="slot dusk">
+  <div class="label">Dusk — Meal (major)</div>
+  <ul class="major">
+    <li>500 g cooked rice + chicken (150–200 g raw equiv.)</li>
+    <li>paneer + rice + light oil drizzle</li>
+    <li>dal + rice + spinach</li>
+    <li>chapati + sabzi + mutton/fish</li>
+    <li>poha + curd + peanuts (lighter option)</li>
+  </ul>
+  <div class="notes">Tip: keep this the largest meal (dusk) for recovery/repair. Add a cucumber or curd side for digestion.</div>
+</div>
+
+  </div>  <div class="slot" style="margin-top:6px;padding:10px">
+    <div class="label">Compact nutrition snapshots (typical serving) <span class="small">(kcal / protein g / fat g / carbs g)</span></div>
+    <table class="nut-table">
+      <thead>
+        <tr><th>Item</th><th>kcal</th><th>protein</th><th>fat</th><th>carbs</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Bread 4 slices + 2 tbsp PB</td><td>~450</td><td>18</td><td>20</td><td>45</td></tr>
+        <tr><td>Banana + Milk (250 ml)</td><td>~250</td><td>8</td><td>8</td><td>35</td></tr>
+        <tr><td>Poha + Peanuts (1 bowl)</td><td>~350</td><td>9</td><td>12</td><td>55</td></tr>
+        <tr><td>Oats + Banana (1 bowl)</td><td>~300</td><td>10</td><td>6</td><td>55</td></tr>
+        <tr><td>Roti (2) + Curd (100 g)</td><td>~300</td><td>10</td><td>8</td><td>45</td></tr>
+        <tr><td>Noon — Rice + Chicken (500 g cooked)</td><td>~900</td><td>35</td><td>18</td><td>110</td></tr>
+        <tr><td>Noon — Rice + Dal + Veg (500 g)</td><td>~650</td><td>18</td><td>12</td><td>105</td></tr>
+        <tr><td>Dusk — Rice + Chicken (500 g cooked)</td><td>~950</td><td>40</td><td>20</td><td>110</td></tr>
+        <tr><td>Paneer + Rice (100 g paneer)</td><td>~850</td><td>35</td><td>28</td><td>95</td></tr>
+        <tr><td>Pre-bed — Warm Milk (250 ml)</td><td>~160</td><td>8</td><td>8</td><td>12</td></tr>
+      </tbody>
+    </table>
+    <div class="notes">Notes: values are approximate. Use protein powder to top up to 120–130 g/day. Add fruit/curd occasionally for micronutrients. Adjust portions if very active.</div>
+  </div>  <div class="footer">Built compactly for quick viewing. Use this as a rotating menu: pick one minor + one major per slot. Ask to export as a downloadable file if you need that.</div>
+</div>
+</body>
+</html>
